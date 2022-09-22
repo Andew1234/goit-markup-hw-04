@@ -382,11 +382,16 @@ body {
 }
 
 .social-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-link:focus {
   fill: var(--primary-background-color);
   background-color: var(--accent-color);
 }
 
-.social-item:focus {
+.social-link:hover .social-item-symbol,
+.social-link:focus .social-item-symbol {
   fill: var(--primary-background-color);
   background-color: var(--accent-color);
 }
