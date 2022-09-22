@@ -363,30 +363,32 @@ body {
 }
 
 .social-link {
-  display: flex;
+  display: block;
   padding: 12px 12px;
+  width: 20px;
+  height: 20px;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-}
 
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
+  color: var(--icon-color);
+  background-color: var(--primary-background-color);
 }
 
 .social-item-symbol {
-  width: 20px;
-  height: 20px;
-
-  fill: var(--icon-color);
+  color: currentColor;
 }
 
-.social-item:hover .social-item-symbol,
-.social-item:focus .social-item-symbol {
+.social-link:hover {
   fill: var(--primary-background-color);
+  background-color: var(--accent-color);
+}
+
+.social-item:focus {
+  fill: var(--primary-background-color);
+  background-color: var(--accent-color);
 }
 
 /* Regular Clients Section */
