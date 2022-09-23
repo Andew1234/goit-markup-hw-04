@@ -363,10 +363,8 @@ body {
 }
 
 .social-link {
-  display: block;
+  display: flex;
   padding: 12px 12px;
-  width: 20px;
-  height: 20px;
   align-items: center;
   justify-content: center;
   width: 44px;
@@ -378,6 +376,8 @@ body {
 }
 
 .social-item-symbol {
+  width: 20px;
+  height: 20px;
   color: currentColor;
 }
 
@@ -386,7 +386,6 @@ body {
 }
 
 .social-link:focus {
-  fill: var(--primary-background-color);
   background-color: var(--accent-color);
 }
 
